@@ -9,5 +9,5 @@ package juegocompiladoroscuro;
  * @author soraya
  */
 public class Juego {
-    
+    System.out.println("Hola");
 }
