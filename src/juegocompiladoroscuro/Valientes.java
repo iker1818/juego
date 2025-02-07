@@ -9,5 +9,12 @@ package juegocompiladoroscuro;
  * @author soraya
  */
 public class Valientes {
-    
+    protected int vida;
+    protected int fuerza;
+    protected int defensa;
+    protected int habilidad;
+    protected int velocidad;
+    protected Objeto arma;
+    protected Objeto escudo;
+    protected int nivel;
 }
