@@ -16,5 +16,5 @@ public class Valientes {
     protected int velocidad;
     protected Objeto arma;
     protected Objeto escudo;
-    protected int nivel;
+    
 }
