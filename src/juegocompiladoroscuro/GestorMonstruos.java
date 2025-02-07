@@ -10,4 +10,14 @@ package juegocompiladoroscuro;
  */
 public class GestorMonstruos {
     
+    
+
+    //metodos principales
+    public void generarMonstruos() {
+
+    }
+
+    public void eliminarMonstruos() {
+
+    }
 }
