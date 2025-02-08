@@ -30,7 +30,8 @@ public class Monstruos {
     //metodos principales
     public void atacar() {
 
-    }
+}
+    
 
     public void recibirDaño() {
 
