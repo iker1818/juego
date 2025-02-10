@@ -32,16 +32,42 @@ public class Juego implements interfazJuego{
             Mapa m1 = new Mapa('*',10);
             GestorMonstruos GM = new GestorMonstruos(10,10,10,10,10,10);
             GM.generarMonstruos();
-            
-            
-             
-             
-         }
-        
-       
-        
-        
-        
+         }  
     }
-    
 }
+public void MostrarMenu(){
+        Scanner teclado = new Scanner(System.in);
+        boolean validarMenu = true;
+        System.out.println("MENU:");
+        System.out.println("1) Mostrar valiente");
+        System.out.println("2) Equipar Objeto");
+        System.out.println("3) Mostrar Mapa");
+        System.out.println("4) Moverse");
+        System.out.println("5) Salir juego");
+        int menu = teclado.nextInt();
+        while(validarMenu){
+        switch(menu){
+                case 1:
+                    System.out.println("Mostrando Valiente");
+                    break;
+                case 2:
+                    System.out.println("Equipando objeto");
+                    break;
+                case 3:
+                    m1.MostrarMapa();
+                    System.out.println("Leyenda del Mapa:");
+                    System.out.println("* = Casilla vacia");
+                    System.out.println("M = Mounstruo en la casilla");
+                    System.out.println("O = Objeto en la casilla");
+                    break;
+                case 4:
+                     System.out.println("Personaje en movimiento");
+                     break;
+                case 5:
+                    System.out.println("SALIENDO DEL JUEGO...");
+                    validarMenu = false;
+                    break;      
+            }
+        }
+         
+    }
