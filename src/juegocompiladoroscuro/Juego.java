@@ -9,8 +9,10 @@ package juegocompiladoroscuro;
  * @author soraya
  */
 public class Juego implements interfazJuego{
+    public Juego(){
+    }
     
-      public void iniciarJuego(){
+    public void iniciarJuego(){
          Scanner teclado = new Scanner(System.in);
         System.out.println("BIENVENIDO AL JUEGO DEL COPILADOR OSCURO");
          boolean validarSelecionHeroe = true;
