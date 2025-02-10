@@ -8,6 +8,6 @@ package juegocompiladoroscuro;
  *
  * @author soraya
  */
-public class Juego {
+public class Juego implements interfazJuego{
     
 }
