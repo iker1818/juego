@@ -38,6 +38,7 @@ public class Juego implements interfazJuego{
 public void MostrarMenu(){
         Scanner teclado = new Scanner(System.in);
         boolean validarMenu = true;
+        while(validarMenu){
         System.out.println("MENU:");
         System.out.println("1) Mostrar valiente");
         System.out.println("2) Equipar Objeto");
@@ -45,7 +46,6 @@ public void MostrarMenu(){
         System.out.println("4) Moverse");
         System.out.println("5) Salir juego");
         int menu = teclado.nextInt();
-        while(validarMenu){
         switch(menu){
                 case 1:
                     System.out.println("Mostrando Valiente");
