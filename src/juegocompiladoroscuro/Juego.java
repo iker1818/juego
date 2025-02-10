@@ -30,8 +30,6 @@ public class Juego implements interfazJuego{
                     break;  
             }
             Mapa m1 = new Mapa('*',10);
-            GestorMonstruos GM = new GestorMonstruos(10,10,10,10,10,10);
-            GM.generarMonstruos();
          }  
     }
 }
