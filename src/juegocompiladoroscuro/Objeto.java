@@ -57,8 +57,7 @@ public class Escudo extends Objeto{
         super(nombre);
         this.aumentoDefensa = aumentoDefensa;
     }
-    
-    @Override
+
     public void equiparObjeto(Valientes valiente) {
         valiente.defensa(aumentoDefensa);
         System.out.println(valiente.getNombre() + " ha equipado " + nombre + " y ha aumentado su defensa en " + aumentoDefensa);
