@@ -22,9 +22,9 @@ public class GestorMonstruos implements interfazGestorMonstruo {
     public void generarMonstruo(int nivel) {
        
         //crear monstruos
-        Monstruos contador = new Monstruos(nivel * 10, nivel, nivel, nivel, nivel, nivel);
-        monstruos[aumentoNivel] = contador;
-        aumentoNivel++;
+        Monstruos monstruo = new Monstruos(nivel * 10, nivel, nivel, nivel, nivel, nivel);
+        monstruos[contador] = monstruo;
+        contador++;
         System.out.println("Monstruo Nivel; " + nivel);
 
     }
@@ -33,7 +33,7 @@ public class GestorMonstruos implements interfazGestorMonstruo {
     public void eliminarMonstruo(Monstruos monstruo) {
         if (monstruo.vida <= 0) {
             System.out.println("Monstruo eliminado");
-            monstruos[aumentoNivel] = monstruo;
+            monstruos[contador] = monstruo;
             aumentoNivel--;
 
         }
