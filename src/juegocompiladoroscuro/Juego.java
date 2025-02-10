@@ -33,7 +33,7 @@ public class Juego implements interfazJuego{
          }  
     }
 }
-public void MostrarMenu(){
+public void MostrarMenu(Mapa m1){
         Scanner teclado = new Scanner(System.in);
         boolean validarMenu = true;
         while(validarMenu){
