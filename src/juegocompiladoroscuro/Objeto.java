@@ -63,5 +63,3 @@ public class Escudo extends Objeto{
         System.out.println(valiente.getNombre() + " ha equipado " + nombre + " y ha aumentado su defensa en " + aumentoDefensa);
     }
 }
-    
-}
