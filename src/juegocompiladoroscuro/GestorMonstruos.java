@@ -11,7 +11,7 @@ package juegocompiladoroscuro;
 public class GestorMonstruos implements interfazGestorMonstruo {
 
     protected Monstruos[] monstruos;
-    protected int aumentoNivel = 0;
+    protected int contador = 0;
 
     //constructor
     public GestorMonstruos() {
@@ -20,10 +20,10 @@ public class GestorMonstruos implements interfazGestorMonstruo {
 
     //metodos principales
     public void generarMonstruo(int nivel) {
-        nivel = 1;
+       
         //crear monstruos
-        Monstruos monstruo = new Monstruos(nivel * 10, nivel, nivel, nivel, nivel, nivel);
-        monstruos[aumentoNivel] = monstruo;
+        Monstruos contador = new Monstruos(nivel * 10, nivel, nivel, nivel, nivel, nivel);
+        monstruos[aumentoNivel] = contador;
         aumentoNivel++;
         System.out.println("Monstruo Nivel; " + nivel);
 
