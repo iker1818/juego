@@ -8,7 +8,7 @@ package juegocompiladoroscuro;
  *
  * @author soraya
  */
-public interface interfazGestorValientes {
+public interface InterfazGestorValientes {
 
  public void crearValientesIniciales();
  
