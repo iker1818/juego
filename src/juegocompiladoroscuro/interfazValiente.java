@@ -10,7 +10,7 @@ package juegocompiladoroscuro;
  */
 public interface interfazValiente {
 
-    public void habilidadEspecial(Monstruo monstruo);
+    public void usarHabilidadEspecial(Monstruo monstruo);
 
     public void subirNivel();
 
