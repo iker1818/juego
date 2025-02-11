@@ -8,6 +8,6 @@ package juegocompiladoroscuro;
  *
  * @author soraya
  */
-public class Mapa {
+public class Mapa implements interfazMapa{
     
 }
