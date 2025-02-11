@@ -12,7 +12,7 @@ package juegocompiladoroscuro;
  public interface interfazGestorMonstruo {
 
  public void generarMonstruo(int nivel);
- public void eliminarMonstruo(Monstruo monstruo);
+ public void eliminarMonstruo(Monstruos monstruo);
 
 }
  
