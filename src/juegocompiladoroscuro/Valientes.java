@@ -21,7 +21,7 @@ public class Valientes implements interfazPersonaje, interfazValiente{
     protected int nivel;
     
     //Constructor
-    public Juego(int vida, int fuerza, int defensa, int habilidad, int velocidad, Objeto arma, Objeto escudo, int nivel) {
+    public Valientes(int vida, int fuerza, int defensa, int habilidad, int velocidad, Objeto arma, Objeto escudo, int nivel) {
         this.vida = vida;
         this.fuerza = fuerza;
         this.defensa = defensa;
