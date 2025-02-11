@@ -8,7 +8,7 @@ package juegocompiladoroscuro;
  *
  * @author soraya
  */
-public class Inventario implements InterfazInventario{
+public class Inventario implements interfazInventario{
     protected Objeto[] inventario;
     protected static int contador;
     
@@ -44,4 +44,5 @@ public class Inventario implements InterfazInventario{
             System.out.println("- " + inventario[i].getNombre());
         }
     }
+    
 }
