@@ -34,6 +34,7 @@ public class Valientes implements interfazPersonaje, interfazValiente{
     
     //Métodos
     //Calcula y aplica el daño al enemigo
+    @Override
     public void atacar(Monstruo enemigo) {      
         int danio = (this.fuerza * this.nivel);
         if (danio > 0) {
@@ -45,6 +46,7 @@ public class Valientes implements interfazPersonaje, interfazValiente{
     }
     
     //Restar vida al valiende al recibir daño
+    @Override
     public void recibirDaño(int cantidad){
         this.vida -= cantidad;
         if (this.vida < 0) 
