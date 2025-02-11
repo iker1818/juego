@@ -9,5 +9,9 @@ package juegocompiladoroscuro;
  * @author soraya
  */
 public interface interfazPersonaje {
-    
+ 
+ public void atacar(Personaje personaje);
+ 
+ public void recibir(int cantidad);
+ 
 }
