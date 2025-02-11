@@ -10,7 +10,6 @@ package juegocompiladoroscuro;
  */
 public interface interfazGestorValientes {
 
- public void generarMonstruo(int nivel);
- public void eliminarMonstruo(Monstruo monstruo);
+ public void crearValientesIniciales();
  
 }
