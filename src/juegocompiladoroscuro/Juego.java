@@ -14,7 +14,7 @@ public class Juego implements interfazJuego{
     
     public void iniciarJuego(){
          Scanner teclado = new Scanner(System.in);
-        System.out.println("BIENVENIDO AL JUEGO DEL COPILADOR OSCURO");
+        System.out.println("BIENVENIDO AL JUEGO DEL COMPILADOR OSCURO");
          boolean validarSelecionHeroe = true;
          while(validarSelecionHeroe){
             System.out.println("Si quiere jugar la partida con un Valiente ya creado, pulse uno,"
