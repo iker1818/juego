@@ -18,7 +18,6 @@ public class Monstruos {
     protected int velocidad;
     protected int nivel;
 
-   
     //constructor
     public Monstruos(int vida, int fuerza, int defensa, int habilidad, int velocidad, int nivel) {
         this.defensa = defensa;
@@ -26,7 +25,6 @@ public class Monstruos {
         this.habilidad = habilidad;
         this.velocidad = velocidad;
         this.vida = vida;
-        this.nivel=nivel;
     }
 
     public int getVida() {
