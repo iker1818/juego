@@ -69,6 +69,7 @@ public class Juego implements interfazJuego{
 public void MostrarMenu(Mapa m1){
         Scanner teclado = new Scanner(System.in);
         boolean validarMenu = true;
+        
         while(validarMenu){
         System.out.println("MENU:");
         System.out.println("1) Mostrar valiente");
@@ -85,8 +86,10 @@ public void MostrarMenu(Mapa m1){
                     System.out.println("Equipando objeto");
                     break;
                 case 3:
+                    System.out.println("MAPA:");
                     m1.MostrarMapa();
                     System.out.println("Leyenda del Mapa:");
+                    System.out.println("-------------------");
                     System.out.println("* = Casilla vacia");
                     System.out.println("M = Mounstruo en la casilla");
                     System.out.println("O = Objeto en la casilla");
