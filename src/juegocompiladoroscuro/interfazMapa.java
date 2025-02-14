@@ -9,5 +9,5 @@ package juegocompiladoroscuro;
  * @author soraya
  */
 public interface interfazMapa {
-    
+    public void revelarCasillas(int x, int y);
 }
