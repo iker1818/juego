@@ -9,5 +9,5 @@ package juegocompiladoroscuro;
  * @author soraya
  */
 public interface interfazCompiladorOscuro {
-    
+    public void aumentarEstadisticas();
 }
