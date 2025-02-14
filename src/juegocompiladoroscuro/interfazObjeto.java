@@ -9,5 +9,5 @@ package juegocompiladoroscuro;
  * @author soraya
  */
 public interface interfazObjeto {
-    
+    public void equiparObjeto(Valiente valiente);
 }
