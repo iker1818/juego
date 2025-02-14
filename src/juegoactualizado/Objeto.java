@@ -8,6 +8,18 @@ package juegoactualizado;
  *
  * @author soraya
  */
-public class Objeto {
+public abstract class Objeto implements interfazObjeto{
+    protected String nombre;
+
+    public Objeto(String nombre) {
+        this.nombre = nombre;
+    }
+    public abstract void equiparObjeto(Valientes valiente);
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    
     
 }
