@@ -9,5 +9,9 @@ package juegoactualizado;
  * @author soraya
  */
 public interface interfazObjeto {
-    
+    public interface ìnterfazObjeto {
+ 
+ public void equiparObjeto(Valientes valiente);
+
+}
 }
