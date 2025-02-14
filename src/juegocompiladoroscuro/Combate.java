@@ -4,58 +4,52 @@
  */
 package juegocompiladoroscuro;
 
+import java.util.Random;
+
 /**
  *
  * @author soraya
  */
+
+
 public class Combate implements interfazCombate {
-
-
+    
+    @Override
     public void iniciarCombate(Valientes valiente, Monstruos monstruo) {
         Random rand = new Random();
-
         
-        double velocidadValiente = valiente.velocidad * (0.75 + (rand.nextDouble() * 0.25)); 
-
-      
-        double velocidadMonstruo = monstruo.velocidad * (0.75 + (rand.nextDouble() * 0.25)); 
-
-     
+        double velocidadValiente = valiente.velocidad * (0.75 + (rand.nextDouble() * 0.25));
+        double velocidadMonstruo = monstruo.getVelocidad() * (0.75 + (rand.nextDouble() * 0.25));
+        
         if (velocidadValiente > velocidadMonstruo) {
             System.out.println("El Valiente ataca primero.");
-            do {
-                monstruo.atacar(valiente);
-                if (valiente.vida > 0) {
-                    valiente.atacar(monstruo);
-                }
-
-            } while (monstruo.vida > 0 && valiente.vida > 0);
         } else {
             System.out.println("El Monstruo ataca primero.");
-            do {
+        }
+        
+        while (valiente.vida > 0 && monstruo.getVida() > 0) {
+            if (velocidadValiente > velocidadMonstruo) {
+                valiente.atacar(monstruo);
+                if (monstruo.getVida() > 0) {
+                    monstruo.atacar(valiente);
+                }
+            } else {
                 monstruo.atacar(valiente);
                 if (valiente.vida > 0) {
                     valiente.atacar(monstruo);
                 }
-
-            } while (monstruo.vida > 0 && valiente.vida > 0);
+            }
         }
 
-      
-        if (monstruo.vida == 0) {
-            System.out.println("VICTORIA");
-        } else {
-            System.out.println("¡DERROTA!");
-        }
+        terminarCombate(valiente, monstruo);
     }
 
-
-    public void Turno(Personaje atacante, Personaje defensor) {
+    @Override
+    public void turno(Personaje atacante, Personaje defensor) {
         Random rand = new Random();
-        int resultado = rand.nextInt(2); // Genera 0 o 1 
+        int resultado = rand.nextInt(2); 
 
         if (resultado == 0) {
-            // Cálculo de daño basado en la fuerza y nivel
             int danio = atacante.getFuerza() * atacante.getNivel();
             defensor.recibirDaño(danio);
             System.out.println("El atacante hizo " + danio + " de daño al defensor.");
@@ -64,30 +58,17 @@ public class Combate implements interfazCombate {
         }
     }
 
-
-    public void terminarCombate(Valientes valiente, Monstruos monstruo) {
-        // Método para terminar el combate, mostrando un resumen de la batalla
-        if (monstruo.vida == 0) {
-            System.out.println("El Valiente ha ganado la batalla.");
-        } else if (valiente.vida == 0) {
-            System.out.println("El Monstruo ha ganado la batalla.");
-        }
-        System.out.println("Fin del combate.");
-    }
-
     @Override
-    public void iniciarCombate(Object valiente, Object monstruo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void terminarCombate(Valientes valiente, Monstruos monstruo) {
+        System.out.println("Fin del combate.");
+        System.out.println("Estado final del Valiente: Vida = " + valiente.vida);
+        System.out.println("Estado final del Monstruo: Vida = " + monstruo.getVida());
+
+        if (valiente.vida > 0) {
+            System.out.println("¡El Valiente ha ganado la batalla y gana experiencia!");
+            valiente.ganarExperiencia();
+        } else {
+            System.out.println("¡El Monstruo ha ganado la batalla!");
+        }
     }
-
 }
-/*
-}
-
-   
-
-    public void combateTerminado(Valiente Maliente, Monstruo monstruo) {
-
-    }
-}
- */
