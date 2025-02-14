@@ -44,7 +44,7 @@ public class Combate implements interfazCombate {
         terminarCombate(valiente, monstruo);
     }
 
-    @Override
+   
     public void turno(Valientes atacante, Monstruos defensor) {
         Random rand = new Random();
         int resultado = rand.nextInt(2); 
@@ -66,9 +66,10 @@ public class Combate implements interfazCombate {
 
         if (valiente.vida > 0) {
             System.out.println("¡El Valiente ha ganado la batalla y sube de nivel!");
-            valiente.;
+            valiente.nivel++;
         } else {
             System.out.println("¡El Monstruo ha ganado la batalla!");
         }
     }
+
 }
