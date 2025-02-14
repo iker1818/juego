@@ -8,6 +8,8 @@ package juegoactualizado;
  *
  * @author soraya
  */
-public interface interfazPersonajes {
-    
+public interface interfazMapa {
+ 
+ public void revelarCasillas(int x, int y);
+
 }
