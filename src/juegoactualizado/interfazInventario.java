@@ -9,5 +9,9 @@ package juegoactualizado;
  * @author soraya
  */
 public interface interfazInventario {
-    
+ 
+ public void agregarObjeto(Objeto objeto);
+ public void usarObjeto(String nombre, Valientes valiente);
+ public void mostrarInventario();
+
 }
