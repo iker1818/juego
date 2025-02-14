@@ -8,6 +8,17 @@ package juegoactualizado;
  *
  * @author soraya
  */
-public class Espada {
+public class Espada extends Objeto{
     
+    private int aumentoFuerza;
+
+    public Espada(int aumentoFuerza, String nombre) {
+        super(nombre);
+        this.aumentoFuerza = aumentoFuerza;
+    }
+    
+    public void equiparObjeto(Valientes valiente) {
+        valiente.arma(aumentoFuerza);
+        System.out.println(valiente.getNombre() + " ha equipado " + nombre + " y ha aumentado su fuerza en " + aumentoFuerza);
+    }
 }
