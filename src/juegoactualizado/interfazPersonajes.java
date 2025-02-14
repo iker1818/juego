@@ -8,8 +8,9 @@ package juegoactualizado;
  *
  * @author soraya
  */
-public interface interfazMapa {
+public interface interfazPersonajes {
  
- public void revelarCasillas(int x, int y);
+ public int atacar(Personaje personaje);
+ public void recibir(int cantidad);
 
 }
