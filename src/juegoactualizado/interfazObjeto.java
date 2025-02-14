@@ -8,6 +8,6 @@ package juegoactualizado;
  *
  * @author soraya
  */
-public interface interfazObajeto {
+public interface interfazObjeto {
     
 }
