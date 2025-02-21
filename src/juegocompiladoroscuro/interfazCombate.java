@@ -10,7 +10,7 @@ package juegocompiladoroscuro;
  */
 public interface interfazCombate {
  
- public void  iniciarCombate(Valiente valiente ,Monstruo monstruo);
+ public void iniciarCombate(Valiente valiente ,Monstruo monstruo);
  public void Turno(Personaje atacante, Personaje defensor);
  public void terminarCombate(Valiente valiente ,Monstruo monstruo);
 
