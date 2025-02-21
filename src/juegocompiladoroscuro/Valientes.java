@@ -56,10 +56,10 @@ public class Valientes implements interfazPersonaje, interfazValiente{
     
     //Ejecuta un ataque especial según la clase del valiente
     @Override
-    public void usarHhabilidadEspecial(Monstruo enemigo){
+    public void usarHhabilidadEspecial(Monstruos enemigo){
         int danio = (this.fuerza * this.nivel);
         if (danio > 0) {
-            Monstruo.recibirDaño(danio);
+            enemigo.recibirDaño(danio);
             System.out.println("El monstruo ha hecho: " + danio + " daño");
         } else {
             System.out.println("0 daño");
