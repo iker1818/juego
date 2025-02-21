@@ -35,10 +35,10 @@ public class Valientes implements interfazPersonaje, interfazValiente{
     //Métodos
     //Calcula y aplica el daño al enemigo
     @Override
-    public void atacar(Monstruo enemigo) {      
+    public void atacar(Monstruos enemigo) {      
         int danio = (this.fuerza * this.nivel);
         if (danio > 0) {
-            Monstruo.recibirDaño(danio);
+            enemigo.recibirDaño(danio);
             System.out.println("El monstruo ha hecho: " + danio + " daño");
         } else {
             System.out.println("0 daño");
